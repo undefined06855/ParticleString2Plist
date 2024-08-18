@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Particle String to Plist</title>
+    </head>
+    <body>
+        <img src="./resources/swelvy.svg" class="swelvy" />
+        <main>
+            <h1>Particle String &rightarrow; Plist Converter</h1>
+            <span>
+                <label for="particle-input">Particle string:</label>
+                <input type="text" id="particle-input"/>
+            </span>
+            <textarea id="result" readonly></textarea>
+            <div class="btn-wrap">
+                <button id="btn-copy">Copy</button>
+                <button id="btn-download">Download</button>
+            </div>
+            <hr/>
+            <small class="why">
+                <i><span class="question">Why aren't some of my values in the plist?</span></i></br>
+                Some values just don't get controlled by cocos2d - Rob does them himself.<br/>
+                These include:<br/>
+                <i>Everything</i> on the "Extra" Page, except "Start rot is dir"<br/>
+                The particle texture (has to be <mono>square.png</mono>, unless there is a way around it)<br/>
+                The "Emission" setting - this one suprised me, but cocos particles constantly emit with no limit.
+            </small>
+        </main>
+
+        <footer>
+            <a src="example.com">Github</a> | <a src="example.com">What is this for?</a>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

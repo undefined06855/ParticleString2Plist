@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e7e7e7;
+}
+
+*:not(input, textarea) {
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+span, input {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #272727;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    width: 70%;
+    max-width: 700px;
+    height: fit-content;
+    border-radius: 20px;
+    background-color: #43434372;
+}
+
+main > h1 {
+    margin-bottom: 16px;
+}
+
+mono {
+    font-family: monospace;
+}
+
+hr {
+    width: 70%;
+    margin: 20px 0px;
+}
+
+img.swelvy {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    rotate: 180deg;
+    z-index: -1;
+    max-height: 400px;
+}
+
+span > input { margin-left: 20px; }
+
+input, textarea { font-family: monospace; }
+input, textarea, button {
+    background-color: #272727;
+    border-style: solid;
+    border-radius: 6px;
+    padding: 10px;
+    border-width: 2px;
+}
+
+textarea#result {
+    width: 500px;
+    height: 280px;
+    resize: none;
+    text-wrap: nowrap;
+}
+
+.btn-wrap {
+    width: 420px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-wrap > button {
+    flex: 1;
+}
+
+small.why {
+    margin: 20px;
+}
+
+.why-hover {
+    transition: opacity .2s linear;
+    opacity: 0%;
+    width: 800px;
+    background-color: #101010d6;
+    border-radius: 9px;
+    padding: 10px;
+    translate: 0px 20px;
+}
+.why-hover, .why-hover > *, .why-hover > * > * {
+    text-align: left;
+}
+
+small.why:hover > .why-hover {
+    opacity: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+}
+
+span.question {
+    font-family: cursive;
+}

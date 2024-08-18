@@ -1,0 +1,5 @@
+// things that you cant change that may need to be included?
+
+sourcePositionx (float)
+sourcePositiony (float)
+textureFileName (string, should be "square.png")
