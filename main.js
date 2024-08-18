@@ -1,4 +1,5 @@
 let mappings = -1
+const NO_INPUT_PLACEHOLDER = "Awaiting input..."
 
 // i wouldve used a library but they're so large and i only need 1% of the plist features
 // so it's easier to do this
@@ -19,7 +20,7 @@ function plistFromObject(obj) {
 
 async function convert(string) {
     if (string == "") {
-        return "Awaiting input..."
+        return NO_INPUT_PLACEHOLDER
     }
 
     if (mappings == -1) {
@@ -63,6 +64,9 @@ async function onConvert(/*CCObject* sender :troll:*/) {
     let string = document.querySelector("#particle-input").value
     let plist = await convert(string)
     document.querySelector("#result").value = plist
+
+    document.querySelector("#btn-copy").disabled = plist == NO_INPUT_PLACEHOLDER
+    document.querySelector("#btn-download").disabled = plist == NO_INPUT_PLACEHOLDER
 }
 
 document.querySelector("#particle-input").addEventListener("input", () => {

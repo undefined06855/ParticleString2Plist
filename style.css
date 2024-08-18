@@ -102,27 +102,11 @@ textarea#result {
 
 .btn-wrap > button {
     flex: 1;
+    cursor: pointer;
 }
 
 small.why {
     margin: 20px;
-}
-
-.why-hover {
-    transition: opacity .2s linear;
-    opacity: 0%;
-    width: 800px;
-    background-color: #101010d6;
-    border-radius: 9px;
-    padding: 10px;
-    translate: 0px 20px;
-}
-.why-hover, .why-hover > *, .why-hover > * > * {
-    text-align: left;
-}
-
-small.why:hover > .why-hover {
-    opacity: 100%;
 }
 
 footer {
