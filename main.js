@@ -54,7 +54,7 @@ async function convert(string) {
 }
 
 async function fetchMappings() {
-    let obj = await fetch("./mappings.json")
+    let obj = await fetch("https://06855.xyz/ParticleString2Plist/mappings.json")
     let res = await obj.text()
     mappings = JSON.parse(res)
 }
