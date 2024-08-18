@@ -70,6 +70,16 @@ document.querySelector("#particle-input").addEventListener("input", () => {
 })
 onConvert()
 
-document.querySelector("#copy-btn").addEventListener("click", () => {
-
+document.querySelector("#btn-copy").addEventListener("click", () => {
+    navigator.clipboard.writeText(document.querySelector("#result").value)
 })
+
+document.querySelector("#btn-download").addEventListener("click", () => {
+    let el = document.createElement("a")
+    el.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(document.querySelector("#result").value))
+    el.setAttribute("download", "particle.plist")
+    document.body.appendChild(el)
+    el.click()
+    document.body.removeChild(el)
+})
+
