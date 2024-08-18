@@ -10,7 +10,7 @@
     <body>
         <img src="./resources/swelvy.svg" class="swelvy" />
         <main>
-            <h1>Particle String &rightarrow; Plist Converter</h1>
+            <h1>GD Particle String &rightarrow; Cocos Plist</h1>
             <span>
                 <label for="particle-input">Particle string:</label>
                 <input type="text" id="particle-input"/>
@@ -25,16 +25,11 @@
                 <i><span class="question">Why aren't some of my values in the plist?</span></i></br>
                 Some values just don't get controlled by cocos2d - Rob does them himself.<br/>
                 These include:<br/>
-                <i>Everything</i> on the "Extra" Page, except "Start rot is dir"<br/>
+                <strong>Everything</strong> on the "Extra" Page, except "Start rot is dir"<br/>
                 The particle texture (has to be <mono>square.png</mono>, unless there is a way around it)<br/>
-                The "Emission" setting - this one suprised me, but cocos particles constantly emit with no limit.
+                The "Emission" setting - cocos particles constantly emit with no limit.
             </small>
         </main>
-
-        <footer>
-            <a src="example.com">Github</a> | <a src="example.com">What is this for?</a>
-        </footer>
-
         <script src="main.js"></script>
     </body>
 </html>

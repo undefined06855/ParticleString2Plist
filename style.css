@@ -80,6 +80,7 @@ input, textarea, button {
     border-radius: 6px;
     padding: 10px;
     border-width: 2px;
+    border-color: #767676;
 }
 
 textarea#result {
