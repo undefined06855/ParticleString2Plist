@@ -34,7 +34,8 @@ with open("mappings.txt") as file:
             print(f"{label} was not found!")
             failures += 1
 
-# find bools
+# find bools by comparing the string and the base string
+# and finding the first character that's different
 bool_label = ""
 with open("boolstrings.txt") as file:
     while True:
