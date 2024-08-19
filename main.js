@@ -11,8 +11,8 @@ function plistFromObject(obj) {
     for (let [key, value] of Object.entries(obj)) {
         // only need to support strings and real numbers (floats) for this one
         let valueType = typeof value == "string" ? "string" : "real"
-        body += `\t<key>${key}</key>\n`
-        body += `\t<${valueType}>${value}</${valueType}>\n`
+        body += `    <key>${key}</key>\n`
+        body += `    <${valueType}>${value}</${valueType}>\n`
     }
     
     return header + body + footer

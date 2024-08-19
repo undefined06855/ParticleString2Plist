@@ -14,10 +14,6 @@ a {
     cursor: pointer;
 }
 
-span, input {
-    font-size: 20px;
-}
-
 h1 {
     font-size: 36px;
 }
@@ -47,19 +43,21 @@ main {
     height: fit-content;
     border-radius: 20px;
     background-color: #43434372;
+    font-size: 20px;
 }
 
 main > h1 {
     margin-bottom: 16px;
 }
 
-mono {
+.mono {
     font-family: monospace;
 }
 
 hr {
     width: 70%;
     margin: 20px 0px;
+    border-color: #919191;
 }
 
 img.swelvy {
@@ -105,15 +103,23 @@ textarea#result {
     cursor: pointer;
 }
 
-small.why {
-    margin: 20px;
-}
-
 footer {
     position: fixed;
     bottom: 10px;
 }
 
 span.question {
-    font-family: cursive;
+    font-family: serif;
+    font-size: 25px;
+    font-style: italic;
+}
+
+noscript {
+    /* 50, 50, 50, 50, 50, 50... */
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    translate: -50% -50%;
+    font-size: 50px;
+    background-color: #000000;
 }
